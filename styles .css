@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+/* ------Font-------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* common styles */
 :root{
@@ -85,13 +86,18 @@ nav ul li a{
     background-color: var(--blue-color);
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100%;  
+}
+.banner:hover .banner-image img{
+    transform: scale(1.1) translate(50px) rotate(30deg);
+    transition: transform .2s ease-in;
 }
 
 .banner-container{
     display: flex;
     justify-content: space-between;
     padding-bottom: 114px;
+
 }
 .banner-image{
     margin-left: 95px;
@@ -108,9 +114,9 @@ nav ul li a{
 }
 .watch-link a{
     
-   background-color: var(--pink-color);
-   padding: 10px 24px;
-   color: #fff;
+    background-color: var(--pink-color);
+    padding: 10px 24px;
+    color: #fff;
 }
 .watch-link:hover{
     display: inline-block;
@@ -122,12 +128,14 @@ nav ul li a{
     margin-left: 8px;
 }
 
+
 /*----------------------
     players
 ------------------------*/
 
 
 .players{
+    margin-top: 70px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 27px 30px;
@@ -150,6 +158,8 @@ nav ul li a{
     font-weight: var(--font-normal);
     font-size: 16px;
 }
+
+
 /*-------------------
     highligts
 --------------------- */
@@ -198,6 +208,8 @@ nav ul li a{
     text-align: justify ;
     height:231px;
 }
+
+
 /*-------------------------
     Videos
 ----------------------------*/
@@ -274,7 +286,7 @@ footer{
 ------------------------------*/
 
 
-/* -----------Mobile phone------------- */
+/* -----Mobile phone----- */
 @media only screen and (max-width:688px){
    
    /* -----menu------- */
