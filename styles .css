@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+/* common styles */
+:root{
+    --font-bold:700;
+    --font-normal:400;
+    --icon-color:#969BAB;
+    --blue-color:#2D25A0; 
+    --pink-color:#E02C6D;
+} 
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:1050px;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* Banner */
+.banner{
+    
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 114px;
+}
+.banner-image{
+    margin-left: 95px;
+}
+.banner-image img{
+    width: 556px;
+    height: 438px;
+}
+.banner-title{
+    font-size: 64px;
+    color:#fff;
+    line-height: 80px;
+    margin-bottom: 27px;
+}
+.watch-link a{
+    
+   background-color: var(--pink-color);
+   padding: 10px 24px;
+   color: #fff;
+}
+.watch-link:hover{
+    display: inline-block;
+    transform: scale(1.2) translate(14px);
+    transition: transform .2s ease-out;
+   
+}
+.arrow{
+    margin-left: 8px;
+}
+
+/* players */
+
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 27px 30px;
+
+}
+.player{
+    width: 300px;
+    padding:15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player-title{
+    font-weight: var(--font-bold);
+    font-size: 28px;
+}
+.player-details{
+    font-weight: var(--font-normal);
+    font-size: 16px;
+}
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 158px;
+    margin-bottom: 63px;
+}
+.footer-container{
+    width: 483px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 483px;
+    height: 110px;
+}
+.social-icons{
+    display: flex;
+}
+.social-icons>*{
+    margin-right: 14px;
+}
+
+.icon-bg{
+    margin-right: 5px;
+    display: flex;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #e7e7e8;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    color:var(--icon-color);   
+}
+.copy-right{
+    font-size: 18px;
+}
