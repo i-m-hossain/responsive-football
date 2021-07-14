@@ -8,6 +8,7 @@
     --icon-color:#969BAB;
     --blue-color:#2D25A0; 
     --pink-color:#E02C6D;
+    --dark-color:#1E1E1E;
 } 
 
 body{
@@ -73,6 +74,9 @@ a{
 }
 .arrow{
     margin-left: 8px;
+}
+hr{
+    margin: 50px 50px;
 }
 
 /* players */
@@ -147,6 +151,28 @@ a{
     text-align: justify ;
     height:231px;
 }
+/* Videos */
+.videos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:35px 30px;
+
+}
+.video{
+    margin-right: 30px;
+    
+}
+ .video-title{
+     background-color: var(--dark-color);
+     color: #fff;
+     padding: 30px;
+     margin: 0;
+     
+ }
+ iframe{
+     width: 510px;
+     height:350px
+ }
 
 
 /* footer */
